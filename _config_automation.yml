@@ -14,23 +14,23 @@ data_dest: github
 folder_path:
 
 ###### Calendly ######
-refresh-calendly: yes
+refresh-calendly: no
 calendly_googlesheet:
 
 ###### Citations ######
-refresh-citations: yes
+refresh-citations: no
 citation_papers: [
   "https://scholar.google.com/scholar?cites=6140457238337460780",
   "https://scholar.google.com/scholar?cites=15945159957067506879" ]
 citation_googlesheet:
 
 ###### CRAN ######
-refresh-cran: yes
+refresh-cran: no
 cran_packages: [ metricminer, ottrpal ]
 cran_googlesheet:
 
 ###### GitHub ######
-refresh-github: yes
+refresh-github: no
 github_repos: [
   fhdsl/metricminer,
   fhdsl/metricminer-dashboard,
@@ -40,15 +40,94 @@ github_repos: [
 github_googlesheet:
 
 ###### Google Analytics ######
-refresh-ga: yes
+refresh-ga: no
 ga_property_ids: [ 422671031, 422558989 ]
 ga_googlesheet:
 
 ###### Google Forms ######
 refresh-googleforms: yes
 google_forms: [
-  1pbFfgUPYH2w9zEoCDjCa4HFOxzEhGOseufw28Xxmd-o,
-  1JjmsiuVoGSxvl-1M_oWittcftO955tijzeNc-cgJlo8 ]
+1biNbI_iyEVd3H7pT6QbmPV2FfUDtihh1fg_BOHjMkOY,
+1KRkbX4oLdQdIE7_YzD6PssDpBZXcuY3MLdg3DAP2QKw,
+1gLeTVsnDb4_7WmmaN2v1Fqvoe9pP3o2fMm6phTM1peg,
+15YLPnPif0l9E3mK5JpBP48PTSLuYkvTyUpHApBJFRXE,
+1LH7qd2jvDZjGmR1Amox0BfVRidlf28CnfvoIaapvesY,
+1MxT63okYko8PP6rCtN_qDXGJWof5Syer8SIL1uAz_sM,
+1c4m2mJIL2AHul4qPmxPwlZtpP1Y0r9re80nlyQledlw,
+10-PZNvzlcvbmcKJkIARyxMjzt30KJmevE_HqlKWXzHQ,
+1X50u_FU7EOh4-r2qYAaICiK9g-k4z9LEhcgyWSspVpA,
+1E2kk8EhlfeviwnoVAbbDY1hMzBx2rHGWvDZQtKQDpvA,
+1trei7rjZcKqAItqasraJAx272NULB5fA1eKYnI80MGI,
+1eJ74UNlfVGpWJLq1sw7FhqtpG2L4Kzu2npw7yP93R3U,
+1ThySAR_cj-3xQyjKOxxbcZwHvtOteN-chGHdNMOqhlw,
+1Si2yKreE6iFfw0_0-tyJdAMuRgeZE488A43veBQq-PU,
+12UieBR1H82Sec_9kDh9-A6cPIjiXcSYUYeGe4lJtNko,
+1gNv70162oMQ--yEyP3XJCNosB-04vYfv8C0yY9F8CVo,
+1Bse8R4G25C6V9qcxW1bxGnyark1cuoAcSYHDt52qbII,
+1QY6GAndXSBJJjNybd9nUD5y5D2LlNpZiwN36ZbLFcAg,
+1qk-sc43ixqF2fuXOW7rhQRxef_3lnxeuPyXca2UuFu8,
+1nRQ6orCJz03c0uXwL4hOybHka8TAyHP48p7aetoj1WE,
+1PiLp7ni0lIs6xx7m2k1guwYOyBe7zkwu6IpdhPfAZro,
+194aI-aOkmzacNLBPt8pl0XoBkt1vgazxPbfS_bX6InY,
+1Dowdm1AkbErd9NdYTOZSaHfm8mAOgm3e9CeaiUBUOxI,
+11J8rgcrSCIZUqEbb6n0LDiNcGgOskv2mrR2ZRTLV--w,
+1NwKWGgAvW2eYZH9Lo41_1ouI6WFPz-9Ky0g1fkg3UJ4,
+1M8oMxQzBK5OFdalcRzZNClqsoJOAQKv0bibP82fFl6o,
+1tr1nR4HYlTYtsFfdyBB-AVrSgjD3-W0_-E4pkGpPfZc,
+1jztG8bNW2yEYZ-yGqve_VakPK1SzWbRgp9aU7T6yDXY,
+1FvSE7Zu_socPG0SpGPq46LNe3r02wGhj17bf7nNaMzI,
+1KeJqPh5qKkM05m3VuCzmyRkFLswhuIN0tnyZvgE7aoE,
+1Mfj3bT30MaW_mwLImKw1yYf-HctAzA5EZImPbkhSBbg,
+1OlVYLr7R_2WY6mr4RjUA6gYSi6fgJL3KrUAJxGzS7sQ,
+1n7rs-9PpdC8qCAdeqsg4gn9k-j2fl5sE2vo5UxHXDXI,
+1BA_5JB7wPGDHA87Qmna18_svbB63njN-RcNGl7o3Snw,
+1MtpbrCjPl49P738qB9v4RkEghYvw9fedLUk0rNuOPUE,
+1WdM_Asg9HB95xNiwHGFfQrT5ExNBCk-xib-_obHy9Ws,
+1vF46LNu-M09rzNfD3p6M6KdTy7nwKFgsA40YGF6ORjI,
+16S3-6P_FSnmiEew4It_zYR1A0DVzvXnFq13zmCuOLB8,
+1xR_yAQ2RAmecUhA6tg1qVUsArMwcJXJlm0yYJl-YZuk,
+1WMNc8vc-n98_sQrM1Ck7FqWMleu1kY5TcvM9j1Jk31Q,
+1zi8PD8RNJok4jSru6io2LRIEP3eRAgiu8qosTLpqNcU,
+1bFVbrO_MVmUQseB_BuA7BXxb4OSXA800ayz-OrAsypc,
+1_bASx0K58cf6VOLuPR9P21TQWT7I7h_JUemQZvspCNQ,
+1GtAUg0EVWkyJNJ4bDylfzSiTtwc6dZO-764QsbhfoZU,
+1UFxmqqzOqPe2SEI3pm883FD2mBliMObMLvxyV-xbzdQ,
+1xq6AYYYxaP3OX4y-H-jvGhk57DL-dy8A3cvwOMbM6XY,
+1uM5F4Rmidsda62Sex9RQnCb6Y3-VMDp63LYxJhYkYRI,
+1psnAVmQw8sTFOQO21tm--mYlaePs6TqADuo0Y7swDlE,
+1c0WasNOR2F1LksBMgB3V4ZGqmKG8bR1Qfx4dh_sBqbA,
+1Ndcjm94ZhGkA5vBfuDvpomzGiPzaNPII3hBqjL77TLA,
+1TsEKDPWFto71pj0eLIKXuJTpXCmp0CcAgjdS4-ynX6g,
+1YoEsJmsqTFmDeMieuLI98sACgA0ch2Ij_O9w5ApRt50,
+15BVdJgdg3xZrcrFUA4ffSw442Gz68o9u8J6vylZ8l2U,
+1aNOLriPvPxQRZlOjZijxk2nmLGiyjZ4ZebbqCLyoJVE,
+182QZ0VipMxLnmXSQjPpNSjRnuTF_8N2sJ4oiFP7Y6xU,
+1lCchGUWim36YTfc0eZFRGYIbfSY1AptQi1C1th_E6M8,
+1c9WGO45g4eubpw7fwbQgZPDIxpv4kN4mkoUrBjomxws,
+1xzRmIRwe5vTUDfEeOTQ5Ce3WCrZVJGIS67wyE_5S3cc,
+1Hb-q-LVe-Xrn8cA-Si4s7K3WmA4RNx7gAL0PKATTEZA,
+1yYhRfHaBRAGSMpB2b1kZcWf1c7UWYWLO7Z47kMoIii8,
+17bKdHDFHnmA09MKiuNa7dxUQ-LJ_lky6NoDdx6_ZBSI,
+1r_J25vskElLhJxAZlmqLPAWsIu4x_CfIusKgLK1vzrc,
+1ihb5DRpJExHR9Rtm0zKxDohUEGy5QY9ET-K-j_2V9LI,
+1aJmh6jVfu8Ye2yHUAuULE0S7tw8-obwOFruuEfIZMbE,
+1fSF02rwM7St8VU--3JKs7qFG3i-XmkKVgxRyf3n3FE4,
+1hsnAdWCWxIOdtsRq5Duk1iV0l1AqPj9_FLTTu6RWma8,
+1CR3GD9gp4NVTqNC_zLuEqTh5Te3adZ_kM6aLXGGjQb8,
+1SkR6kWec8RcHPHYoJxtgYSuFlA34SIlbvKHuysitpMM,
+1fbpk9i8xhUUZ39MTsqo50Nn9XuawsLQlFUimnizKNtY,
+1yTYiDpoZiu-09LK9cA0I6IegYR2WcJQSHLFa_wRN580,
+1LSbRAnD9wHjC-3F1Ec0iEib69Ju4lPehJ7TrUfmDv7s,
+1y4jsoNuqzitYOwGRdS8TnU6FB7Box3PU-9Ri_8kJ1ZU,
+1v1UjbPT_1V-nigUyJE2JY74IhGVzUr15tPKO88jNNeE,
+12zyOQr0ldWwTUD73dafrLj1vnE2xygrZaw0x5Oil2Dk,
+1D4LXb_xSf9UnjRMbIMclNTdt1xKqkrfP6CHlU5GR3xg,
+1BtVhOFhyRPN6nmHp1CC8-KOrfZqDJYlxi6WC5dahUjA,
+1127t8aVoRpxrigQoisl0XfU6Ud809-7-Y53Oj-l3ezA,
+1IxFZan8uXD4ppG1cMrYGcC8pDyrvw3BXWOkAMcs8cqM,
+1DBjwv32Uot-ZXxwWyilho7ONpODBBmKyoES0zg0XQBs,
+1usCNgt1kweyr8vOm1QfUNpkGU6bXk36__dYqi-gINxI,
+]
 googleforms_googlesheet:
 
 ###### Slido ######
@@ -57,7 +136,7 @@ drive_id: 1XWXHHyj32Uw_UyaUJrqp6S--hHnM0-7l
 slido_googlesheet:
 
 ###### YouTube ######
-refresh-youtube: yes
+refresh-youtube: no
 video_ids: [ XN_QPRrJZAw, YkYnni-WuaQ ]
 youtube_googlesheet:
 
