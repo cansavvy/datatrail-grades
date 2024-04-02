@@ -1,0 +1,73 @@
+
+# It was adapted by Candace Savonen for the OTTR_template https://github.com/jhudsl/OTTR_Template.
+
+# This code was adapted by Carrie Wright to enable automated rendering of the site associated with this repository
+
+name: Refresh Site
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [ main ]
+    paths:
+      - data/*
+      - '**.Rmd'
+      - styles.css
+      - _site.yml
+      - subdir_html/*.Rmd
+      - resources/images/*.png
+      - resources/images/favicon.ico
+      - site_libs/*
+
+jobs:
+  yaml-check:
+    name: Load user automation choices
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+          token: ${{ secrets.METRICMINER_GITHUB_PAT }}
+
+      - name: Load environment from YAML
+        uses: doughepi/yaml-env-action@v1.0.0
+        with:
+            files: _config_automation.yml # Pass a space-separated list of configuration files. Rightmost files take precedence.
+
+    outputs:
+      rendering_docker_image: "${{ env.RENDERING_DOCKER_IMAGE }}"
+
+  render-main:
+    needs: yaml-check
+    runs-on: ubuntu-latest
+    container:
+      image: ${{needs.yaml-check.outputs.rendering_docker_image}}
+    steps:
+      - name: checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          token: ${{ secrets.METRICMINER_GITHUB_PAT }}
+
+      - name: Delete old *.html
+        run: Rscript -e "rmarkdown::clean_site(preview = FALSE)"
+
+      - name: Run render html
+        id: site
+        run: Rscript -e "rmarkdown::render_site()"
+
+      - name: Check on render steps
+        if: steps.site.outcome != 'success'
+        run: |
+          echo site status ${{steps.site.outcome}}
+          exit 1
+
+      - name: Commit rendered site files
+        run: |
+          git config --system --add safe.directory $GITHUB_WORKSPACE
+          git config --local user.email "actions@github.com"
+          git config --local user.name "GitHub Actions"
+          git add --force docs/
+          git commit -m 'Render site' || echo "No changes to commit"
+          git push origin main || echo "No changes to push"

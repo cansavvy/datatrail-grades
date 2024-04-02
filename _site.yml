@@ -1,0 +1,39 @@
+name: metricminer dashboard
+output_dir: 'docs'
+navbar:
+  title: metricminer dashboard
+  left:
+  - text: Home
+    href: index.html
+    icon: fa-home
+  - text: Calendly
+    href: calendly.html
+    icon: fa-calendar
+  - text: Citations
+    href: citations.html
+    icon: fa-scroll
+  - text: CRAN
+    href: cran.html
+    icon: fa-r
+  - text: GitHub
+    href: github.html
+    icon: fa-github
+  - text: Google Analytics
+    href: googleanalytics.html
+    icon: fa-google
+  #- text: Slido
+  #  href: slido.html
+  #  icon: a-square-poll-vertical
+  - text: Youtube
+    href: youtube.html
+    icon: fa-play
+
+output:
+  html_document:
+    theme: cosmo
+    lib_dir: site_libs
+    self_contained: no
+    highlight: textmate
+    includes:
+       in_header: resources/header.html
+       in_footer: resources/footer.html
