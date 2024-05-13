@@ -10,7 +10,6 @@ on:
 jobs:
   refresh-grades:
     name: Refresh Grades
-    needs: yaml-check
     runs-on: ubuntu-latest
     container:
       image: cansav09/metricminer
