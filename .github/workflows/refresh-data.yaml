@@ -1,5 +1,5 @@
 
-name: Refresh Data
+name: Refresh Grade Data
 on:
   workflow_dispatch:
   schedule:
@@ -23,6 +23,7 @@ jobs:
 
       - name: Refresh DataTrail Grades Sheet
         env:
+          GH_PAT: ${{ secrets.GH_PAT }}
           GOOGLECLASSROOM_ACCESS: ${{ secrets.GOOGLECLASSROOM_ACCESS }}
           GOOGLECLASSROOM_REFRESH: ${{ secrets.GOOGLECLASSROOM_REFRESH }}
           METRICMINER_GOOGLE_ACCESS: ${{ secrets.METRICMINER_GOOGLE_ACCESS }}

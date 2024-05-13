@@ -2,8 +2,8 @@
 
 # Download that Google Forms data
 
-remotes::install_github("fhdsl/metricminer")
-remotes::install_github("datatrail-jhu/rgoogleclassroom")
+remotes::install_github("fhdsl/metricminer", auth = Sys.getenv("GH_PAT"))
+remotes::install_github("datatrail-jhu/rgoogleclassroom", auth = Sys.getenv("GH_PAT"))
 
 library(magrittr)
 library(rgoogleclassroom)
