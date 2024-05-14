@@ -20,7 +20,7 @@ rgoogleclassroom::auth_from_secret(
 
 course_id <- get_course_list()$courses$id[1]
 
-quizzes <- get_coursework_list(course_id)
+quizzes <- get_coursework_list(course_id = course_id)
 
 quiz_urls <- purrr::map(quizzes$courseWork$materials, ~ .x$form$formUrl)
 quiz_name <- purrr::map(quizzes$courseWork$materials, ~ .x$form$title)
