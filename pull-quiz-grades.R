@@ -47,7 +47,7 @@ metricminer::auth_from_secret("google",
 )
 
 #### Get the Google Forms data
-google_forms <- get_multiple_forms(form_ids = quiz_urls, dataformat = "raw")
+google_forms <- metricminer::get_multiple_forms(form_ids = quiz_urls, dataformat = "raw")
 
 quiz_info <- data.frame(
   quiz_link = names(unlist(purrr::map(google_forms, ~ .x$form_metadata$result$info$documentTitle))),
