@@ -18,9 +18,9 @@ rgoogleclassroom::auth_from_secret(
   access_token = Sys.getenv("GOOGLECLASSROOM_ACCESS")
 )
 
-course_id <- get_course_list()$courses$id[1]
+#course_id <- get_course_list()
 
-quizzes <- get_coursework_list(course_id = course_id)
+quizzes <- get_coursework_list(course_id = "653622697082")
 
 quiz_urls <- purrr::map(quizzes$courseWork$materials, ~ .x$form$formUrl)
 quiz_name <- purrr::map(quizzes$courseWork$materials, ~ .x$form$title)
