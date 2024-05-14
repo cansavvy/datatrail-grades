@@ -15,7 +15,7 @@ root_dir <- rprojroot::find_root(rprojroot::has_dir(".git"))
 # Authorize googleclassroom first
 rgoogleclassroom::auth_from_secret(
   refresh_token = Sys.getenv("GOOGLECLASSROOM_REFRESH"),
-  access_token = Sys.getenv("GOOGLECLASSROOM_ACCESS"),
+  access_token = Sys.getenv("GOOGLECLASSROOM_ACCESS")
 )
 
 course_id <- get_course_list()$courses$id[1]
