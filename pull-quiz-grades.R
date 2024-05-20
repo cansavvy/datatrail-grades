@@ -65,7 +65,7 @@ quiz_grades <- data.frame(
 
 grades <- dplyr::left_join(quiz_grades, quiz_info, by = "quiz_link") %>%
   dplyr::mutate(grade_perc = score/total_questions) %>%
-  group_by(email, quiz) %>%
+  dplyr::group_by(email, quiz) %>%
   dplyr::filter(grade_perc == max(grade_perc)) %>%
   dplyr::mutate(index_num = as.numeric(stringr::word(quiz, sep = " ", 1))) %>%
   dplyr::select(index_num, quiz, email, grade_perc) %>%
